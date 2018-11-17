@@ -55,3 +55,36 @@ func getQuery() []truck {
 
 	return filtered
 }
+
+func filterTrucksByTime(timeNow string, totalColl []truck) ([]truck, error) {
+
+	newTrucks := make([]truck, 0)
+
+	hourNow, err := time.Parse("15:04", timeNow)
+	handle(err)
+
+	for _, tr := range totalColl {
+
+		startString := tr.Start24
+		if startString == "24:00" {
+			startString = "00:00"
+		}
+
+		truckStart, err := time.Parse("15:04", startString)
+		handle(err)
+
+		endString := tr.End24
+		if endString == "24:00" {
+			endString = "00:00"
+		}
+
+		truckEnd, err := time.Parse("15:04", endString)
+		handle(err)
+
+		if truckStart.Before(hourNow) && truckEnd.After(hourNow) {
+			newTrucks = append(newTrucks, tr)
+		}
+	}
+
+	return newTrucks, nil
+}
