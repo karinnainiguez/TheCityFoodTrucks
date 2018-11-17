@@ -3,7 +3,6 @@ package main
 import (
 	"fmt"
 	"os"
-	"strconv"
 
 	"github.com/kubicorn/kubicorn/pkg/logger"
 	"github.com/manifoldco/promptui"
@@ -86,8 +85,6 @@ func showTrucks(allTrucks []truck, pageNum int) {
 		}
 		table.Append(truckData)
 	}
-
-	table.SetFooter([]string{"", "Total Trucks Open Now: ", strconv.Itoa(len(allTrucks))})
 
 	logger.Always("There are a total of %v open food trucks in San Francisco now.", len(allTrucks))
 	totalPages := len(allTrucks) / RESULTSPERPAGE
