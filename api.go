@@ -66,6 +66,8 @@ func filterTrucksByTime(timeNow string, totalColl []truck) ([]truck, error) {
 	for _, tr := range totalColl {
 
 		startString := tr.Start24
+		// edge case: Golang uses 00:00 as midnight, but the API uses 24:00.
+		// handle before parsing to avoid error
 		if startString == "24:00" {
 			startString = "00:00"
 		}
@@ -74,6 +76,8 @@ func filterTrucksByTime(timeNow string, totalColl []truck) ([]truck, error) {
 		handle(err)
 
 		endString := tr.End24
+		// edge case: Golang uses 00:00 as midnight, but the API uses 24:00.
+		// handle before parsing to avoid error
 		if endString == "24:00" {
 			endString = "00:00"
 		}

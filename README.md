@@ -6,6 +6,14 @@ Welcome to the Command Line Interface tool designed to find open food trucks in 
 
 This tool is built using Golang.  You will need to have [Go installed on your computer, your Go Workspace created, and the path to that workspace stored in your ``GOPATH`` ](https://www.callicoder.com/golang-installation-setup-gopath-workspace/). 
 
+When go has been completed, ensure that the following two variables are set up in your bash profile: 
+
+```
+export GOPATH=/usr/lib/go/
+
+export PATH=$PATH:$GOPATH/bin
+```
+
 Clone this repository in your GOPATH.  Within the TheCityFoodTrucks folder, run the following commands to install dependencies and the tool: 
 
 ```
@@ -72,15 +80,21 @@ Use the arrow keys to navigate: ↓ ↑ → ←
 As the user explores other pages of results,an option for "Previous" page will also appear.  At any point, the user may select "Exit" to exit the program.
 
 
-```
-
-```
+**NOTE:**
 When the command is run, and there are less than 10 food trucks open at the time, the user will not see "Previous" or "Next" options, as there is only one page of results.
 
 
 ## Implementation
 
+This tool is built with [Golang](https://golang.org/).  The data regarding food trucks is provided by the [city of San Francisco](https://data.sfgov.org/Economy-and-Community/Mobile-Food-Schedule/jjew-r69b), with the help of the [community SDK for Socrata](https://github.com/SebastiaanKlippert/go-soda) when making get requests to that API. 
+
 
 ## Limitations
 
+Right now, the user needs to be comfortable using the command line in order to use the tool.  Additionally, they will only see food trucks open at the time of running the program. 
+
 ## Possible Improvements
+
+In order to address some of the limitations, it would be helpful to allow the user to set a flag with a date and time.  That would allow someone to plan ahead and see what food trucks are open in the future, or what food trucks were open on a specific date in the past.  We could also expand the usage of the tool by providing a web based user interface, to allow a larger audience to use the tool, including those users that are not comfortable using the command line. 
+
+As always, before we begin making new features and enhancements, it would be beneficial to have full code coverage through testing.  That would ensure that we do not break current functionality when implementing anything else. 
