@@ -28,56 +28,56 @@ Below are some examples of users running this command at different times:
 
 
 ```
-2018-11-16T17:34:42-08:00 [✿]  There are a total of 43 open food trucks in San Francisco now.
-2018-11-16T17:34:42-08:00 [✿]      page 1 of 5: 
+2018-11-19T10:29:48-08:00 [✿]  There are a total of 178 open food trucks in San Francisco now.
+2018-11-19T10:29:48-08:00 [✿]      page 1 of 18: 
 
-+--------------------------+--------------------+--------------------+
-|        TRUCK NAME        |      ADDRESS       |       TIMES        |
-+--------------------------+--------------------+--------------------+
-| Mob Dog                  | 720 MARKET ST      | Friday  8AM - 10PM |
-| Tacos El Flaco           | 2901 03RD ST       | Friday  7AM - 6PM  |
-| Yummy Hot Dogs           | 945 MARKET ST      | Friday  10AM - 7PM |
-| Golden Gate Halal Food   | 1169 MARKET ST     | Friday  8AM - 8PM  |
-| Halal Cart, LLC          | 901 MARKET ST      | Friday  10AM - 8PM |
-| Singh Brothers Ice Cream | 360 PENINSULA AVE  | Friday  5PM - 6PM  |
-| Alfaro Truck             | 306 VALENCIA ST    | Friday  2PM - 10PM |
-| CC Acquisition LLC       | 298 MARKET ST      | Friday  7AM - 6PM  |
-| Kettle Corn Star         | 865 MARKET ST      | Friday  10AM - 6PM |
-| San Pancho's Tacos       | 491 BAY SHORE BLVD | Friday  6AM - 10PM |
-+--------------------------+--------------------+--------------------+
++--------------------------------+----------------------+---------------------+
+|           TRUCK NAME           |       ADDRESS        |        TIMES        |
++--------------------------------+----------------------+---------------------+
+| Anas Goodies Catering          | 1411 MARKET ST       | Monday  10AM - 11AM |
+| Anas Goodies Catering          | 2150 CESAR CHAVEZ ST | Monday  10AM - 11AM |
+| Anas Goodies Catering          | 368 ELM ST           | Monday  10AM - 11AM |
+| Anas Goodies Catering          | 150 OTIS ST          | Monday  10AM - 11AM |
+| Athena SF Gyro                 | 699 08TH ST          | Monday  6AM - 6PM   |
+| BH & MT LLC                    | 2145 MARKET ST       | Monday  10AM - 11AM |
+| BH & MT LLC                    | 3253 16TH ST         | Monday  10AM - 11AM |
+| BH & MT LLC                    | 1477 GROVE ST        | Monday  10AM - 11AM |
+| BOWL'D ACAI, LLC.              | 451 MONTGOMERY ST    | Monday  9AM - 3PM   |
+| Bay Area Mobile Catering, Inc. | 1301 CESAR CHAVEZ ST | Monday  9AM - 5PM   |
+| dba. Taqueria Angelica's       |                      |                     |
++--------------------------------+----------------------+---------------------+
 Use the arrow keys to navigate: ↓ ↑ → ← 
 ? Page No. 1  Options: 
   ▸ Next
     Exit
 ```
-Above, the user ran the command at 5:34pm on a Friday.  Since there are 43 food trucks, the user has the option to go navigate through the pages of food trucks by selecting "Next" from the options list.
+Above, the user ran the command at 10:29am on a Monday.  Since there are 178 food trucks open, the user has the option to go navigate through the pages of food trucks by selecting "Next" from the options list.
 
 ```
-2018-11-16T17:34:57-08:00 [✿]  There are a total of 43 open food trucks in San Francisco now.
-2018-11-16T17:34:57-08:00 [✿]      page 3 of 5: 
+2018-11-19T10:30:49-08:00 [✿]  There are a total of 178 open food trucks in San Francisco now.
+2018-11-19T10:30:49-08:00 [✿]      page 3 of 18: 
 
-+-------------------+----------------------+---------------------+
-|    TRUCK NAME     |       ADDRESS        |        TIMES        |
-+-------------------+----------------------+---------------------+
-| Tacos Santana     | 2142 JERROLD AVE     | Friday  5PM - 10PM  |
-| The Chai Cart     | 79 NEW MONTGOMERY ST | Friday  7AM - 6PM   |
-| Linda's Catering  | 260 TOWNSEND ST      | Friday  12PM - 10PM |
-| Got Snacks        | 1020 03RD ST         | Friday  10AM - 9PM  |
-| Tacos Rodriguez   | 600 MENDELL ST       | Friday  8AM - 6PM   |
-| La Jefa           | 531 BAY SHORE BLVD   | Friday  7AM - 8PM   |
-| Linda's Catering  | 999 DIVISADERO ST    | Friday  7AM - 7PM   |
-| Scotch Bonnet     | 115 SANSOME ST       | Friday  6AM - 8PM   |
-| Giant Burrito     | 353 BAY SHORE BLVD   | Friday  7AM - 6PM   |
-| Santana ESG, Inc. | 200 SHOTWELL ST      | Friday  10AM - 10PM |
-+-------------------+----------------------+---------------------+
++--------------------------+--------------------+---------------------+
+|        TRUCK NAME        |      ADDRESS       |        TIMES        |
++--------------------------+--------------------+---------------------+
+| D & T Catering           | 3100 PACIFIC AVE   | Monday  10AM - 11AM |
+| D & T Catering           | 3839 WASHINGTON ST | Monday  10AM - 11AM |
+| D & T Catering           | 2970 BROADWAY      | Monday  10AM - 11AM |
+| D & T Catering           | 2840 BROADWAY      | Monday  10AM - 11AM |
+| D & T Catering           | 2201 VALLEJO ST    | Monday  10AM - 11AM |
+| DO UC US Mobile Catering | 400 PARNASSUS AVE  | Monday  9AM - 4PM   |
+| El Gallo Jiro            | 3055 23RD ST       | Monday  10AM - 6PM  |
+| El Tonayanse #4 / #36    | 1717 HARRISON ST   | Monday  10AM - 7PM  |
+| El Tonayense #60         | 401 TREAT AVE      | Monday  10AM - 4PM  |
+| Eli's Hot Dogs           | 101 BAY SHORE BLVD | Monday  9AM - 5PM   |
++--------------------------+--------------------+---------------------+
 Use the arrow keys to navigate: ↓ ↑ → ← 
 ? Page No. 3  Options: 
   ▸ Previous
     Next
     Exit
-
 ```
-As the user explores other pages of results,an option for "Previous" page will also appear.  At any point, the user may select "Exit" to exit the program.
+As the user explores other pages of results, an option for "Previous" page will also appear.  At any point, the user may select "Exit" to exit the program.
 
 
 **NOTE:**
