@@ -3,6 +3,7 @@ package main
 import (
 	"encoding/json"
 	"io/ioutil"
+	"sort"
 	"time"
 
 	"github.com/SebastiaanKlippert/go-soda"
@@ -89,6 +90,11 @@ func filterTrucksByTime(timeNow string, totalColl []truck) ([]truck, error) {
 			newTrucks = append(newTrucks, tr)
 		}
 	}
+
+	// sort by name
+	sort.Slice(newTrucks, func(i, j int) bool {
+		return newTrucks[i].Applicant < newTrucks[j].Applicant
+	})
 
 	return newTrucks, nil
 }
